@@ -1,0 +1,20 @@
+#include<iostream>
+#include<cstdio>
+using namespace std;
+typedef long long int ll;
+int main(){
+	int t;
+	cin >> t;
+	for(int i = 1; i<=t; i++){
+		int n,m,k;
+		cin >> n >> m >> k;
+		//scanf("%d %d %d", &n,&m,&k);
+		ll knife = n+m+k-3;
+		ll hand = (n*m)*k-1;
+		ll fuck = 2000*2000*2000;
+		fuck--;
+		cout << fuck << endl;
+		cout << "Case #" << i << ": " << hand << " " << knife << endl;
+	}
+	return 0;
+}
